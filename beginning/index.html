@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        h1 {margin-bottom: 30px;}
+        label {font-weight: bold;}
+        input, select {margin-bottom: 10px;}
+        #submit{background-color: rgb(38, 140, 224); border: 2px solid rgb(89, 207, 247);color: white}
+        form {width: 30%; padding: 20px;border: 2px solid rgb(238, 136, 52); background-color: rgb(228, 224, 224);}
+    </style>
+</head>
+<body class="mt-2 ml-4">
+    <h1>Employee Management System</h1>
+
+    <form id="empForm">
+        <label for="id">8-digit Employee ID</label><br>
+        <input type="text" id="id" name="id" maxlength="8" required><br>
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="ext">4-Digit Extension</label><br>
+        <input type="text" id="ext" name="ext" maxlength="4" required><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="department">Department</label><br>
+        <select id="department" name="department" required>
+            <option value="Administrative">Administrative</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Executive">Executive</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Quality Assurance">Quality Assurance</option>
+            <option value="Sales">Sales</option>
+        </select><br><br>
+        
+        <input type="submit" id="submit" value="Add Employee">
+
+     
+    </form>
+</body>
+</html>
